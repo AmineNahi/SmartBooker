@@ -35,3 +35,19 @@
 - **IA / Machine Learning :** Python (scikit-learn, NLP pour analyse d’avis)  
 - **Authentification :** JWT / OAuth  
 - **Paiement en ligne :** Stripe / PayPal API
+
+---
+
+## 🏗️ Phases de développement
+1. **Phase 1 – Analyse & Conception** : inscription, recherche, fiches détaillées  
+2. **Phase 2 – Backend** : réservation, gestion des prestataires et utilisateurs  
+3. **Phase 3 – Frontend** : interface responsive, dashboard, historique  
+4. **Phase 4 – IA & API externes** : comparaison prix, analyse avis, recommandations, chatbot  
+5. **Phase 5 – Tests & Intégration** : tests fonctionnels et correction des bugs  
+6. **Phase 6 – Déploiement & Documentation** : déploiement et création de la documentation  
+
+
+---
+
+## 🎯 Objectif du projet
+Créer une plateforme complète et intelligente pour faciliter la réservation de services, améliorer la fiabilité et l’expérience utilisateur grâce à l’intégration de l’IA.
