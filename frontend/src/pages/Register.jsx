@@ -1,5 +1,5 @@
-import { useState } from "react";
-import API from "../services/api";
+import React, { useState } from "react";
+import API from "../services/api.js";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -11,18 +11,18 @@ export default function Register() {
     try {
       const { data } = await API.post("/auth/register", { name, email, password });
       localStorage.setItem("token", data.token);
-      alert("Inscription réussie !");
+      alert(`Inscription réussie ! Bienvenue ${data.name}`);
     } catch (error) {
-      alert(error.response.data.message);
+      alert(error.response?.data?.message || "Erreur lors de l'inscription");
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <h2>Inscription</h2>
-      <input placeholder="Nom" value={name} onChange={e => setName(e.target.value)} required />
-      <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
-      <input type="password" placeholder="Mot de passe" value={password} onChange={e => setPassword(e.target.value)} required />
+      <input placeholder="Nom" value={name} onChange={(e) => setName(e.target.value)} required />
+      <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+      <input type="password" placeholder="Mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} required />
       <button type="submit">S'inscrire</button>
     </form>
   );
