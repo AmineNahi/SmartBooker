@@ -68,7 +68,7 @@ SmartBooker vise à **faciliter la réservation de services** tout en **amélior
 
 | Catégorie | Technologies |
 |------------|---------------|
-| **Frontend** | HTML, CSS, JavaScript, React *(ou Angular/Vue selon choix)* |
+| **Frontend** | HTML, CSS, JavaScript, React  |
 | **Backend** | Node.js, Express, API REST |
 | **Base de données** | MongoDB / MySQL |
 | **IA / Machine Learning** | Python, scikit-learn, NLP (analyse d’avis) |
